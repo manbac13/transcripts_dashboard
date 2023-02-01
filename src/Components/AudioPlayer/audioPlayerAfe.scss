@@ -1,0 +1,31 @@
+$font-size-for-audio: 12px;
+
+
+.audio-for-evauation-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .audio-timings-div-afe {
+        display: flex;
+        font-size: $font-size-for-audio;
+    }
+    .audio-slider-afe{
+        width: 90%;
+    }
+    .audio-slider-afe input{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:900px) {
+    .audio-for-evauation-main .audio-slider-afe{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .audio-for-evauation-main .audio-slider-afe{
+        width: 70%;
+    }
+}

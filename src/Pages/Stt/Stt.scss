@@ -1,0 +1,44 @@
+$transcript_font_size : 12px;
+$transcript_font_color : #696969;
+
+.main_transcript_section{
+    width: 50%;
+    margin: auto;
+}
+
+.language_select_section{
+    p{
+        color:$transcript_font_color;
+        margin-right: 15px;
+        font-weight: 600;
+        font-size: $transcript_font_size;
+    }
+}
+
+.transcript_do_copy_section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p{
+        font-size: $transcript_font_size;
+        color:$transcript_font_color;
+        font-weight: 600;
+    }
+}
+.transcript_save_btn_section{
+    margin-top: 15px;
+}
+
+
+
+@media only screen and (min-width:600px) and (max-width:900px) {
+    .main_transcript_section{
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .main_transcript_section{
+        width: 60%;
+    }
+}

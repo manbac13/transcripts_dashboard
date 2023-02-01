@@ -1,0 +1,164 @@
+$font_of_eval : 13px;
+
+$font_color_blue : #82cefa;
+$font_color_orange : #FFBF00;
+$font_color_dark_grey : #696969;
+
+.candles-section {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: $font_of_eval;
+
+    .candle-names-sec {
+        padding-right: 15px;
+        border-right: 1px solid black;
+        margin-right: 15px;
+        color: $font_color_blue;
+        font-weight: 600;
+
+        p:nth-child(2) {
+            margin-top: 35px;
+            color: $font_color_orange;
+        }
+    }
+
+    .candle-view-section {
+        width: 90%;
+
+        .actual-view {
+            border: 1px solid $font_color_blue;
+            padding: 11px;
+            border-radius: 7px;
+        }
+
+        div:nth-child(2) {
+            margin-top: 35px;
+            border: 1px solid $font_color_orange;
+        }
+    }
+
+}
+
+.eval-audioPlayer-section{
+    margin-inline: 20px;
+    border-top: 1px solid #e4e4e4;
+    padding-top: 12px;
+    padding-bottom: 5px;
+    padding-inline-end: 15px;
+}
+
+.eval-appbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 20px;
+    font-size: $font_of_eval;
+
+
+    .language-switch-sec {
+        width: 25%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .search-sec {
+        width: 50%;
+        padding-left: 10px;
+    }
+
+    .MuiOutlinedInput-root {
+        border-radius: 8px;
+    }
+}
+.transcript-convo table{
+    width: 100%;
+    font-size: 11px;
+}
+.transcript-convo table tr td{
+    padding: 5px;
+    
+}
+
+.main-transcript-section {
+    display: flex;
+    padding-top: 10px;
+    padding-inline: 20px;
+
+    .transcript-convo {
+        width: 60%;
+        height: 45vh;
+        overflow-y: scroll;
+        font-size: $font_of_eval;
+    }
+
+    .transcript-oper {
+        width: 40%;
+        padding-left: 1px;
+
+        >p {
+            font-size: $font_of_eval;
+            margin: 0;
+        }
+
+        .tr-oper-select-main {
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+            margin-top: 5px;
+        }
+
+        .tr-oper-select-main>p {
+            color: $font_color_dark_grey;
+            font-weight: 600;
+            font-size: $font_of_eval;
+            margin: 0;
+            margin-inline-end: 10px;
+        }
+
+        .oper-select-sec {
+            margin-top: 10px;
+        }
+
+        .oper-textfield-sec{
+            margin-top: 10px;
+        }
+    }
+}
+
+.update-btn-sec {
+    padding-inline: 20px;
+    margin-top: 10px;
+}
+
+
+@media only screen and (min-width:600px) and (max-width:900px) {
+    .candles-section {
+        width: 90%;
+        font-size: 12px;
+    }
+    .candle-view-section {
+        width: 80%;
+    }
+
+    .eval-appbar .search-sec {
+        width: 30%;
+        padding-left: 10px;
+    }
+
+    .language-switch-sec {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .language-switch-sec {
+        width: 60%;
+    }
+    .eval-appbar .search-sec {
+        width: 30%;
+    }
+}

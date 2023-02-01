@@ -1,0 +1,65 @@
+.audio_player_main_sec{
+    padding-top:25px;
+    padding-bottom: 25px;
+}
+
+.our_aud_player{
+    display: flex;
+    width: 80%;
+    margin:auto;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #063970;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-inline: 15px;
+    color:#fff;
+    border-radius: 10px;
+
+    input{
+        width: 40%;
+    }
+
+    button{
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .audio_speed_control select{
+       width: 50px
+    }
+
+    .current-time-aud{
+        font-size: 15px;
+    }
+
+    .total-time-aud{
+        font-size: 15px;
+    }
+}
+
+
+
+@media only screen and (min-width:600px) and (max-width:900px) {
+    .our_aud_player .current-time-aud{
+        font-size: 13px;
+    }
+
+    .our_aud_player .total-time-aud{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .our_aud_player{
+        width: 90%;
+    }
+    .our_aud_player .current-time-aud{
+        font-size: 12px;
+    }
+
+    .our_aud_player .total-time-aud{
+        font-size: 12px;
+    }
+}
+

@@ -31,7 +31,7 @@ const Stt = () => {
 
     const handleTextFieldChange = (event) => {
         setTextInField(event.target.value);
-        if(!textInField){
+        if (!textInField) {
             setCheckDisable(true)
         }
     }
@@ -44,9 +44,9 @@ const Stt = () => {
         copiedValue ? setCheckDisable(false) : setCheckDisable(true)
     }
 
-    const handleDisable = ()=>{
+    const handleDisable = () => {
         const copiedValue = document.getElementById("outlined-multiline-flexible-second").value;
-        copiedValue ? setCheckDisable(false) : setCheckDisable(true) 
+        copiedValue ? setCheckDisable(false) : setCheckDisable(true)
     }
 
     return (
@@ -67,15 +67,15 @@ const Stt = () => {
                                 inputProps={{ 'aria-label': 'Without label' }}
                                 style={{ height: "22px", fontSize: "12px" }}
                                 MenuProps={{
-                                        style:{maxHeight:"250px"}
-                                    }}
+                                    style: { maxHeight: "250px" }
+                                }}
                             >
-                                <MenuItem sx={{ width: "160px",height:"20px", backgroundColor:"#f7f7f7", fontSize:"13px" }} value="">
+                                <MenuItem sx={{ width: "160px", height: "20px", backgroundColor: "#f7f7f7", fontSize: "13px" }} value="">
                                     <em>Language</em>
                                 </MenuItem>
                                 {
-                                    Languages.map((language, index)=>(
-                                        <MenuItem sx={{ width: "170px",height:"20px", backgroundColor:"#f7f7f7", fontSize:"13px", "&:hover": {backgroundColor:"#FFBF00"} }} key={index} value={language.name}>{language.name}</MenuItem>
+                                    Languages.map((language, index) => (
+                                        <MenuItem sx={{ width: "170px", height: "20px", backgroundColor: "#f7f7f7", fontSize: "13px", "&:hover": { backgroundColor: "#FFBF00" } }} key={index} value={language.name}>{language.name}</MenuItem>
                                     ))
                                 }
 
